@@ -1,11 +1,19 @@
+// lib/types.ts
+
 export interface Post {
-    id: number;
+    id: string;
     title: string;
     content: string;
+    authorId: number;
+    createdAt: Date;
+    updatedAt?: Date;
   }
   
   export interface User {
-      id:number;
-      email:string;
-      password?:string;
+    id: string;
+    email: string;
+    password?: string;
+    name?: string;
+    profilePicture?: string;
   }
+
